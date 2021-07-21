@@ -1,0 +1,43 @@
+{
+  "name": "com.lindseywebsolutions.app",
+  "displayName": "Lindsey Web Solutions",
+  "version": "1.0.0",
+  "description": "A cross-platform wrapper for lindseywebsolutions.com (wordpress website).",
+  "main": "index.js",
+  "scripts": {
+    "requirements": "cordova requirements",
+    "start:android": "cordova run android --emulator",
+    "start:browser": "cordova build browser && cordova run browser",
+    "start:ios": "cordova run ios --emulator"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Jake Lindsey",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^9.1.0",
+    "cordova-browser": "^6.0.0",
+    "cordova-ios": "^6.2.0",
+    "cordova-plugin-inappbrowser": "^5.0.0",
+    "cordova-plugin-network-information": "^3.0.0",
+    "cordova-plugin-splashscreen": "^6.0.0",
+    "cordova-plugin-whitelist": "^1.3.5"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-network-information": {},
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-splashscreen": {}
+    },
+    "platforms": [
+      "ios",
+      "android",
+      "browser"
+    ]
+  },
+  "dependencies": {
+    "cordova-js": "^6.1.0"
+  }
+}
